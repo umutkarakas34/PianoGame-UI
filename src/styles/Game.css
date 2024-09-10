@@ -1,0 +1,114 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.game {
+  text-align: center;
+}
+
+.header {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header .score, .header .timer {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.piano {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: white;
+}
+
+.piano-key {
+  position: absolute;
+  width: 25%; /* Sütun genişliğini ayarladık */
+  background-color: black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.piano-key:active {
+  background-color: red;
+}
+
+.piano-key.active {
+  background-color: red;
+}
+
+.sutun {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: rgba(0, 0, 0, 0.5); /* Dikey çizgi */
+}
+
+.sutun:nth-child(1) {
+  left: 25%;
+}
+
+.sutun:nth-child(2) {
+  left: 50%;
+}
+
+.sutun:nth-child(3) {
+  left: 75%;
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 2;
+}
+
+.game-over-message {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.restart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.restart-button:hover {
+  background-color: #45a049;
+}

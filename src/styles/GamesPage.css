@@ -1,0 +1,74 @@
+.games-page-container {
+    width: 100%;
+    margin-top: 0;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.header-title {
+    color: orange;
+}
+
+.export-button {
+    background-color: blue;
+    color: white;
+}
+
+.export-button:hover {
+    background-color: darkblue;
+}
+
+.datagrid-container {
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.datagrid {
+    height: auto;
+}
+
+.datagrid .MuiDataGrid-columnHeaders {
+    background-color: white;
+    color: #333;
+}
+
+.datagrid .MuiDataGrid-virtualScroller {
+    background-color: white;
+}
+
+.datagrid .MuiDataGrid-cell {
+    color: #333;
+}
+
+.datagrid .MuiSvgIcon-root {
+    color: #6200ea;
+}
+
+.actions-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.edit-icon {
+    color: #2196f3;
+    cursor: pointer;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+}
+
+.delete-icon {
+    color: #ff4081;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}

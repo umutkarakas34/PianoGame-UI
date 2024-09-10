@@ -1,0 +1,176 @@
+.friends-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* En üstte başlamak için */
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    overflow: hidden; /* Taşan içerikleri gizle */
+    position: relative; /* Konumlandırma için gerekli */
+    padding-bottom: 120px;
+}
+
+.friends-title {
+    font-size: 2rem;
+    margin: 20px 0;
+    z-index: 2; /* Başlık üstte kalacak */
+}
+
+.message-box {
+    width: 80%;
+    max-width: 600px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 3; /* Mesaj kutusu üstte kalacak */
+}
+
+.referral-section {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    z-index: 1; /* Üstte kalması için */
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.copy-button {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px; /* Butonları küçültmek için padding değerini azalttık */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.875rem; /* Yazı boyutunu küçülttük */
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background-color: #3700b3;
+}
+
+.send-button {
+    background-color: #ff5722;
+    color: white;
+    padding: 6px 12px; /* Butonları küçültmek için padding değerini azalttık */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.875rem; /* Yazı boyutunu küçülttük */
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #e64a19;
+}
+
+.referrals-list {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 18px;
+    z-index: 1; 
+    max-height: 40vh;
+}
+
+.referrals-list h2 {
+    margin-bottom: 10px;
+}
+
+.referrals-scroll {
+    width: 100%; /* Tam genişlik */
+    max-height: 40vh; /* Maksimum yükseklik ayarı */
+    overflow-y: auto; /* Dikey kaydırma */
+}
+
+.referral-item {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    white-space: nowrap; /* Metinlerin taşmasını önle */
+    overflow: hidden; /* Taşan metinleri gizle */
+    text-overflow: ellipsis; /* Taşan metinleri üç noktayla göster */
+}
+
+.referral-info {
+    text-align: left;
+    flex: 1; /* Eşit genişlik için */
+}
+
+.tokens-earned {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* İkonu sağa yerleştir */
+    color: white; /* Yeşil renk */
+    font-weight: bold;
+    gap: 5px; /* Token sayısı ve ikon arasına boşluk ekle */
+}
+
+.icon {
+    color: white;
+    font-size: 20px;
+}
+
+.background-notes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Arkada kalması için */
+    overflow: hidden;
+}
+
+.note {
+    position: absolute;
+    opacity: 0.5;
+    animation: float 10s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 0.5;
+    }
+    25% {
+        transform: translate(50px, -50px) rotate(15deg);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translate(-50px, -100px) rotate(-10deg);
+        opacity: 1;
+    }
+    75% {
+        transform: translate(50px, -150px) rotate(10deg);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translate(0, -200px) rotate(0deg);
+        opacity: 0.5;
+    }
+}
