@@ -7,7 +7,7 @@ import QueueMusicIcon from '@mui/icons-material/QueueMusic';
 import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
 
 const Home = () => {
-    const userName = 'Kullanıcı Adı'; // Burada kullanıcı adını dinamik olarak alabilirsiniz
+    const userName = 'username'; // Burada kullanıcı adını dinamik olarak alabilirsiniz
     const totalTokens = 1000; // Örnek toplam token adedi
     const tickets = 5; // Örnek ticket sayısı
     const colors = ['#ff4081', '#3f51b5', '#4caf50', '#ffeb3b', '#e91e63', '#2196f3', '#f44336', '#9c27b0', '#673ab7', '#ff5722', '#00bcd4', '#8bc34a'];
