@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Piano Challenge Oyunu
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu projede, kullanıcılara eğlenceli ve hızlı tempolu bir piyano deneyimi sunan **Piano Challenge** oyununu bulacaksınız. Oyun, belirli bir süre boyunca ekranda düşen notalara tıklayarak puan toplamanızı amaçlar. Farklı renkteki notaların her biri farklı puan ve özellikler taşır. Detaylar aşağıda açıklanmıştır.
 
-## Available Scripts
+## Oyun Arayüzü
 
-In the project directory, you can run:
+### 1. Ana Sayfa:
+- Kullanıcı adınızı görüntüler.
+- Sol üst köşede oyun puanınızı (nota simgesi ile) gösterir.
+- Sağ üst köşede oyun jetonlarınızı (jeton simgesi ile) gösterir.
+- "Play" butonuna tıklayarak oyunu başlatabilirsiniz.
+- Fon müziği temalı arka plan animasyonları ile görsel olarak zenginleştirilmiştir.
 
-### `npm start`
+![Ana Sayfa](./screenshots/1.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Görevler Sayfası:
+- Farklı görevlerin sıralandığı bir sayfa bulunmaktadır. Her görev için "Start" butonuna tıklayarak göreve başlayabilirsiniz.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Görevler Sayfası](./screenshots/2.png)
 
-### `npm test`
+### 3. Arkadaşlar Sayfası:
+- Arkadaşlarınızın puan durumlarını görebilir ve arkadaşlarınıza referans linki gönderebilirsiniz.
+- Arkadaşlarınızın topladığı puanlar ekranda nota simgesi ile gösterilir.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Arkadaşlar Sayfası](./screenshots/3.png)
 
-### `npm run build`
+### 4. Oyun Ekranı:
+- Oyun başladığında ekranda 4 sütun bulunur ve notalar yukarıdan aşağıya düşer.
+- Her bir nota, kullanıcıdan doğru zamanda tıklama bekler.
+- Kullanıcı, yeşil notalara tıklayarak süre kazanabilir, mavi notalar ise ekstra puan kazandırır.
+- Kırmızı notalar ise puan kaybettirir ve bunlardan kaçınılmalıdır.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Oyun Ekranı](./screenshots/4.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Oyun Mekanikleri
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Notalar**: Oyun içerisinde 4 farklı renk nota bulunmaktadır:
+  - **Siyah Notalar**: Temel notalar, tıklanmasıyla +1 puan kazandırır.
+  - **Kırmızı Notalar**: Ceza notaları, tıklanmasıyla -10 puan kaybettirir.
+  - **Yeşil Notalar**: Zaman kazandıran notalar, tıklanmasıyla ekstra 2 saniye süre ekler.
+  - **Mavi Notalar**: Özel notalar, tıklanmasıyla +100 puan kazandırır.
 
-### `npm run eject`
+- **Süre**: Oyun 30 saniye boyunca sürer. Süre sona erdiğinde oyun biter ve skorunuz gösterilir.
+- **Puanlama**: Skorunuz tıkladığınız notalara göre hesaplanır. Siyah ve mavi notalar skorunuzu artırırken, kırmızı notalar puan kaybettirir. Yeşil notalar süreyi uzatır.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+İyi eğlenceler! 🎹
